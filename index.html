@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section id="both-forms-section">
+
+        <header>
+            <img src="download (1).jpg" alt="Logo">
+            <p>Student Portal</p>
+        </header>
+
+        <div class="all-forms-container">
+
+            <div class="page-changing-buttons">
+                <button id="login-page" class="active-tab" onclick="showLogin()">Login</button>
+                <button id="create-pass-page" onclick="showCreate()">Create Password</button>
+            </div>
+
+            <section id="login-section">
+
+                <div class="text">
+                    <h4>Login</h4>
+                    <p>Kindly provide the CNIC number and password used during SMIT course registration.</p>
+                </div>
+
+                <form>
+
+                    <div class="cnic-box-1">
+                        <label>CNIC *</label>
+                        <input type="text" id="cnic-input-1">
+                    </div>
+
+                    <div class="pass-box-1">
+                        <label>Password *</label>
+                        <input type="password" id="pass-input-1">
+                    </div>
+
+                    <button type="button" id="login-btn" onclick="handleLogin()">LOGIN</button>
+
+                </form>
+
+            </section>
+
+            <section id="create-pass-section">
+
+                <div class="text">
+                    <h4>Create a Password</h4>
+                    <p>Kindly provide the CNIC number and DOB used during SMIT course registration.</p>
+                </div>
+
+                <form>
+
+                    <div class="cnic-box-2">
+                        <label>CNIC *</label>
+                        <input type="text" id="cnic-input-2">
+                    </div>
+
+                    <div class="DOB-box">
+                        <label>DOB *</label>
+                        <input type="date" id="DOB-input">
+                    </div>
+
+                    <div class="pass-box-2">
+                        <label>Password *</label>
+                        <input type="password" id="pass-input-2">
+                    </div>
+
+                    <button type="button" id="submit-btn" onclick="handleSubmit()">SUBMIT</button>
+
+                </form>
+
+            </section>
+
+        </div>
+
+    </section>
+
+    <section id="landing-page-container">
+
+        <div class="landing-page">
+
+            <div class="logo-and-input-box">
+
+                <div class="profile-circle">
+                    <img src="me.jpeg" alt="Profile">
+                </div>
+                <img class="smit-logo" src="download (1).jpg" alt="Logo">
+
+                <div class="input-and-srch-svg-box">
+                    <input type="text" name="" placeholder="Search Course">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                    </svg>
+                </div>
+            </div>
+
+            <div class="select-and-buttons-box">
+
+                <div class="position-arrow">
+                    <select name="" id="">
+                        <option>ENROLLED</option>
+                        <option>ALL</option>
+                        <option>DROPOUT</option>
+                    </select>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                    </svg>
+
+                </div>
+
+                <div class="feedback-btn-box">
+                    <button class="feedback-btn">Feedback</button>
+
+                    <button class="logout-btn" onclick="handleLogout()"> <svg xmlns="http://www.w3.org/2000/svg"
+                            width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="m16 17 5-5-5-5"></path>
+                            <path d="M21 12H9"></path>
+                            <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+                        </svg> </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
